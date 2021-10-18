@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Ambulance from "./Header/Ambulance";
+import Container from "./Header/Container";
+import Header from "./Header/Header";
+import CardSection from "./About/CardSection";
+import Spacer from "./Utilities/Spacer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  function App() {
+    return (
+      <>
+      <Header/>
+        <Spacer margin="15rem"/>
+      <CardSection /></>
   );
 }
 
