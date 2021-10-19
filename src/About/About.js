@@ -10,7 +10,7 @@ import HeadingPrimary from "./HeadingPrimary";
 function About(props) {
     return (
         <Container>
-            <Illustration />
+            <Illustration id='About' />
             <HeadingPrimary />
         </Container>
     );

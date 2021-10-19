@@ -3,7 +3,13 @@ import styled from "styled-components";
 import {theme} from "../theme";
 import logo from "../Footer/media/logo.png";
 const Container = styled.div`
-
+    a{
+      text-decoration: none;
+    color:black;
+      &:hover{
+        color: ${theme.pink};
+      }
+    }
     ul{
       display: flex;
       flex-direction: row;
@@ -27,12 +33,12 @@ function Navbar(props) {
     return (
         <Container>
             <ul>
-                <li className="list-item">Home</li>
-                <li className="list-item">About</li>
+                <a href='#Home'><li className="list-item">Home</li></a>
+                <a href='#About'><li className="list-item">About</li></a>
                 <li className="list-item"><img src={logo} alt="logo"/></li>
 
-                <li className="list-item">Services</li>
-                <li className="list-item">Contact</li>
+              <a href='#services'>  <li className="list-item">Services</li></a>
+                <a href='#contact'><li className="list-item">Contact</li></a>
             </ul>
         </Container>
     );

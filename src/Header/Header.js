@@ -16,10 +16,10 @@ function Header(props) {
     return (
         <>
         <Navbar />
-        <Container>
+        <Container >
             <LeftContainer >
                 <Spacer margin="5rem"/>
-                <HeadingPrimary/>
+                <HeadingPrimary id='Home'/>
             <Description />
             </LeftContainer>
 

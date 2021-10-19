@@ -7,10 +7,10 @@ const Container = styled.div`
     padding-bottom: 2rem;
     
 `
-function HeadingPrimary(props) {
+function HeadingPrimary({id}) {
     return (
         <Container>
-            <h1>Ambulance C-fast</h1>
+            <h1 id={id}>Ambulance C-fast</h1>
         </Container>
     );
 }

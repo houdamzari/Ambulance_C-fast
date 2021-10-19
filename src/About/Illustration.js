@@ -15,10 +15,10 @@ const Wrapper = styled.div`
 }
 
 `
-function Illustration(props) {
+function Illustration({id}) {
     return (
         <Wrapper>
-            <img className='illustration' src={illustration} alt="illustration"/>
+            <img id={id} className='illustration' src={illustration} alt="illustration"/>
         </Wrapper>
     );
 }

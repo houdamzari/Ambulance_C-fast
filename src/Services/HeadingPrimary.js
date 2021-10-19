@@ -15,10 +15,10 @@ position: relative;
     }
 
 `
-function HeadingPrimary(props) {
+function HeadingPrimary({id}) {
     return (
         <Container>
-            <h1>what can we provide you with ?</h1>
+            <h1 id={id}>what can we provide you with ?</h1>
         </Container>
     );
 }

@@ -29,7 +29,7 @@ function CardSection(props) {
     ];
     return     (
         <>
-            <HeadingPrimary />
+            <HeadingPrimary  id='services'/>
 
         <Container>
             { data.map(p=> <Card image={p.image} title={p.title}  description={p.description} /> )}
