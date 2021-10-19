@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../theme";
-import logo from "./media/logo.png";
+import logo from "../Footer/media/logo.png";
 const Container = styled.div`
 
     ul{

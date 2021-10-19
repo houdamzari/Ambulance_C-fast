@@ -149,8 +149,25 @@ const Container = styled.div`
     left: 5rem;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  button{
+    background-color: white;
+    position: absolute;
+    top: 18rem;
+    left: 6rem;
+    font-size: 1.1rem;
+    color: ${theme.grey};
+    border: none;
+    border-bottom: 1px solid ${theme.grey};
+  }
+  .description{
+    position: relative;
+    color: ${theme.grey};
+    padding: 8rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
 `
-function Card({image,title,list}) {
+function Card({image,title,description,list}) {
     return (
         <Container>
 
@@ -164,16 +181,15 @@ function Card({image,title,list}) {
                                 <img className="icon" src={image} alt='' /></div>
                                 <h1 className='heading-primary'>{title}</h1>
                             </div>
+                            <button>Hover over</button>
                         </div>
                         <div className="card__side card__side--back card__side--back-1">
                             <div className="card__cta">
                                 <div className="card__price-box">
-                                    <ul>
-                                        {list.map(p=><li>{p}</li>)}
-                                    </ul>
+                                    <p className='description'>{description}</p>
+
                                 </div>
                                 </div>
-                                <a href="#popup" className="btn btn--white">Book now</a>
                             </div>
                         </div>
             <Spacer margin='10rem' />
